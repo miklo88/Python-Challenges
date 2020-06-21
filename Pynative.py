@@ -15,14 +15,18 @@ x = 1
 while x < 11:
     print(x)
     x += 1
-    #Exercise Question 2: Print the following pattern
+
+#Exercise Question 2: Print the following pattern
 #2.expected output 
 # 1 
 # 1 2 
 # 1 2 3 
 # 1 2 3 4 
 # 1 2 3 4 5
-
+x = 1
+while x < 6:
+    print(x)
+    x += 1
 #Exercise Question 3: Accept number from user and calculate the sum of all number between 1 and given number
 #3.expected output For example user given 10 so the output should be 55
 
@@ -88,3 +92,7 @@ while x < 11:
 # 3
 # 4
 # Done!
+for x in range(5):
+    print(x)
+else:
+    print('Done!')
