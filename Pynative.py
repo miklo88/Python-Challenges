@@ -23,10 +23,9 @@ while x < 11:
 # 1 2 3 
 # 1 2 3 4 
 # 1 2 3 4 5
-x = 1
-while x < 6:
-    print(x)
-    x += 1
+for i in range(6):
+   print(i)
+
 #Exercise Question 3: Accept number from user and calculate the sum of all number between 1 and given number
 #3.expected output For example user given 10 so the output should be 55
 
@@ -96,3 +95,38 @@ for x in range(5):
     print(x)
 else:
     print('Done!')
+
+    #examples notes reps
+a = ['alpha','bravo','charlie']
+while a:
+    print(a.pop(-1))
+    #returns 
+    #charlie
+    #bravo
+    #alpha
+n = 5
+while n > 0:
+    n -= 1
+    print(n) #countsdown from 5 to 0 but you should remember it will start from 4
+
+#break 
+m = 5
+while m > 0:
+    m -= 1
+    if m == 3:
+        break
+    print(m)
+print('Loop ended.')
+
+#if else clause
+a = ['foo','bar','baz','qux']
+s = 'corge'
+i = 0
+while i < len(a):
+    if a[i] == s:
+        #processing for item found
+        break
+    i += 1
+else:
+    #processing for items not found
+    print(s, 'not found in list.')
