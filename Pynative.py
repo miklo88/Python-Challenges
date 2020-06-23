@@ -23,8 +23,8 @@ while x < 11:
 # 1 2 3 
 # 1 2 3 4 
 # 1 2 3 4 5
-for i in range(6):
-   print(i)
+# for i in range(6):
+#    print(i)
 
 #Exercise Question 3: Accept number from user and calculate the sum of all number between 1 and given number
 #3.expected output For example user given 10 so the output should be 55
@@ -67,6 +67,10 @@ for i in range(6):
 # 30
 # 20
 # 10
+list1 = [10, 20, 30, 40, 50]
+
+
+
 
 # Exercise Question 9: Display -10 to -1 using for loop
 #9.expected output 
@@ -80,7 +84,9 @@ for i in range(6):
 # -3
 # -2
 # -1
-
+for i in range(11):
+    i -= 1
+    print(i)
 # Exercise Question 10: Display a message “Done” after successful execution of for loop
 #10.expected output 
 # for i in range(5):
@@ -96,37 +102,59 @@ for x in range(5):
 else:
     print('Done!')
 
-    #examples notes reps
-a = ['alpha','bravo','charlie']
-while a:
-    print(a.pop(-1))
-    #returns 
-    #charlie
-    #bravo
-    #alpha
-n = 5
-while n > 0:
-    n -= 1
-    print(n) #countsdown from 5 to 0 but you should remember it will start from 4
+#     #examples notes reps
+# a = ['alpha','bravo','charlie']
+# while a:
+#     print(a.pop(-1))
+#     #returns 
+#     #charlie
+#     #bravo
+#     #alpha
+# n = 5
+# while n > 0:
+#     n -= 1
+#     print(n) #countsdown from 5 to 0 but you should remember it will start from 4
 
-#break 
-m = 5
-while m > 0:
-    m -= 1
-    if m == 3:
-        break
-    print(m)
-print('Loop ended.')
+# #break 
+# m = 5
+# while m > 0:
+#     m -= 1
+#     if m == 3:
+#         break
+#     print(m)
+# print('Loop ended.')
 
-#if else clause
-a = ['foo','bar','baz','qux']
-s = 'corge'
-i = 0
-while i < len(a):
-    if a[i] == s:
-        #processing for item found
-        break
-    i += 1
-else:
-    #processing for items not found
-    print(s, 'not found in list.')
+# #if else clause
+# a = ['foo','bar','baz','qux']
+# s = 'corge'
+# i = 0
+# while i < len(a):
+#     if a[i] == s:
+#         #processing for item found
+#         break
+#     i += 1
+# else:
+#     #processing for items not found
+#     print(s, 'not found in list.')
+
+#     #while loop within a while loop
+# a = ['alpha', 'bravo']
+# while len(a):
+#     print(a.pop(0))
+#     b = ['charlie','delta']
+#     while len(b):
+#         print('>', b.pop(0))
+
+# # lets recap for loops quickly
+# # x is the list that we are iterating over.
+# # i is the iterator and x is the item/list/tuple/dictionary you iterate through.
+# x = [1,2,3, 'mylist']
+# for i in x:
+#     print(i)
+#     # now lets look into a nested for loop
+# x = [[1,2,3], ['a','b','c']]
+# #i points to list of x.
+# #then j points to the list created by i from x
+# for i in x:
+#     for j in i:
+#         print(j)
