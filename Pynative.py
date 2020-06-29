@@ -15,7 +15,7 @@ https://pynative.com/print-pattern-python-examples/ (patterns in python)
 # 8
 # 9
 # 10
-#answer
+#####ANSWER
 # x = 1
 # while x < 11:
 #     print(x)
@@ -41,6 +41,7 @@ https://pynative.com/print-pattern-python-examples/ (patterns in python)
 # 3 3 3  
 # 4 4 4 4  
 # 5 5 5 5 5 
+#####ANSWER
 # rows = 5
 # for row in range(1, rows + 1):
 #     for column in range(1, row + 1):
@@ -61,6 +62,10 @@ https://pynative.com/print-pattern-python-examples/ (patterns in python)
 # 16
 # 18
 # 20
+#####ANSWER
+
+for i in range(1, 11):
+    print(i * 2)
 
 # Exercise Question 5: Given a list iterate it and display numbers which are divisible by 5 and if you find number greater than 150 stop the loop iteration
 #5.expected output list1 = [12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200]
@@ -91,12 +96,13 @@ https://pynative.com/print-pattern-python-examples/ (patterns in python)
 # # 2 2 2 2 
 # # 3 3 3 
 # # 4 4 
-# # 5 
-rows = 5
-for i in range(0, rows + 1):
-    for j in range(rows - i, 0, -1):
-        print(j, end=' ')
-    print()
+# # 5
+######ANSWER 
+# rows = 5
+# for i in range(0, rows + 1):
+#     for j in range(rows - i, 0, -1):
+#         print(j, end=' ')
+#     print()
 # Exercise Question 8: Reverse the following list using for loop
 #8.expected output list1 = [10, 20, 30, 40, 50]
 # 50
@@ -104,9 +110,10 @@ for i in range(0, rows + 1):
 # 30
 # 20
 # 10
-list1 = [10, 20, 30, 40, 50]
-for num in reversed(list1):
-    print(num)    
+#####ANSWER
+# list1 = [10, 20, 30, 40, 50]
+# for num in reversed(list1):
+#     print(num)    
 
 
 # Exercise Question 9: Display -10 to -1 using for loop
@@ -121,8 +128,10 @@ for num in reversed(list1):
 # -3
 # -2
 # -1
-for i in reversed(range(1, 11)):
-    print(-i)
+#####ANSWER
+# for i in reversed(range(1, 11)):
+#     print(-i)
+
 # Exercise Question 10: Display a message “Done” after successful execution of for loop
 #10.expected output 
 # 0
@@ -131,6 +140,7 @@ for i in reversed(range(1, 11)):
 # 3
 # 4
 # Done!
+#####ANSWER
 # for x in range(5):
 #     print(x)
 # else:
