@@ -109,10 +109,6 @@ for num in reversed(list1):
     print(num)    
 
 
-# for num in list1:
-#     print(num)
-
-
 # Exercise Question 9: Display -10 to -1 using for loop
 #9.expected output 
 # -10
@@ -125,13 +121,10 @@ for num in reversed(list1):
 # -3
 # -2
 # -1
-# for i in range(11):
-#     i -= 1
-#     print(i)
+for i in reversed(range(1, 11)):
+    print(-i)
 # Exercise Question 10: Display a message “Done” after successful execution of for loop
 #10.expected output 
-# for i in range(5):
-#     print(i)
 # 0
 # 1
 # 2
