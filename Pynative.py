@@ -11,10 +11,10 @@
 # 9
 # 10
 #answer
-x = 1
-while x < 11:
-    print(x)
-    x += 1
+# x = 1
+# while x < 11:
+#     print(x)
+#     x += 1
 
 #Exercise Question 2: Print the following pattern
 #2.expected output 
@@ -22,10 +22,25 @@ while x < 11:
 # 1 2 
 # 1 2 3 
 # 1 2 3 4 
-# 1 2 3 4 5
-# for i in range(6):
-#    print(i)
-
+# 1 2 3 4 5 
+#outer loop tells us the number of rows used and the inner tells us about the columns.
+# rows = 6
+# for num in range(rows):
+#     for i in range(num):
+#         print(num, end=" ") #print number
+#     #line after each row to display pattern correctly
+#     print(" ")
+#RETURNS 
+# 1  
+# 2 2  
+# 3 3 3  
+# 4 4 4 4  
+# 5 5 5 5 5 
+rows = 5
+for row in range(1, rows + 1):
+    for column in range(1, row + 1):
+        print(column, end=' ')
+    print("")
 #Exercise Question 3: Accept number from user and calculate the sum of all number between 1 and given number
 #3.expected output For example user given 10 so the output should be 55
 
@@ -84,9 +99,9 @@ list1 = [10, 20, 30, 40, 50]
 # -3
 # -2
 # -1
-for i in range(11):
-    i -= 1
-    print(i)
+# for i in range(11):
+#     i -= 1
+#     print(i)
 # Exercise Question 10: Display a message “Done” after successful execution of for loop
 #10.expected output 
 # for i in range(5):
@@ -97,10 +112,10 @@ for i in range(11):
 # 3
 # 4
 # Done!
-for x in range(5):
-    print(x)
-else:
-    print('Done!')
+# for x in range(5):
+#     print(x)
+# else:
+#     print('Done!')
 
 #     #examples notes reps
 # a = ['alpha','bravo','charlie']
