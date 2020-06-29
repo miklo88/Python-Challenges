@@ -1,3 +1,8 @@
+'''
+Links for help 
+https://pynative.com/print-pattern-python-examples/ (patterns in python)
+'''
+
 # Exercise Question 1: Print First 10 natural numbers using while loop
 #1. expected output 
 # 1
@@ -36,11 +41,11 @@
 # 3 3 3  
 # 4 4 4 4  
 # 5 5 5 5 5 
-rows = 5
-for row in range(1, rows + 1):
-    for column in range(1, row + 1):
-        print(column, end=' ')
-    print("")
+# rows = 5
+# for row in range(1, rows + 1):
+#     for column in range(1, row + 1):
+#         print(column, end=' ')
+#     print("")
 #Exercise Question 3: Accept number from user and calculate the sum of all number between 1 and given number
 #3.expected output For example user given 10 so the output should be 55
 
@@ -74,7 +79,24 @@ for row in range(1, rows + 1):
 # 3 2 1 
 # 2 1 
 # 1
-
+# rows = 5
+# b = 0
+# for i in range(rows, 0, -1):
+#     b += 1
+#     for j in range(1, i + 1):
+#         print(b, end=' ')
+#     print('\r')
+# #RETURNS
+# # 1 1 1 1 1 
+# # 2 2 2 2 
+# # 3 3 3 
+# # 4 4 
+# # 5 
+rows = 5
+for i in range(0, rows + 1):
+    for j in range(rows - i, 0, -1):
+        print(j, end=' ')
+    print()
 # Exercise Question 8: Reverse the following list using for loop
 #8.expected output list1 = [10, 20, 30, 40, 50]
 # 50
