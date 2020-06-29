@@ -105,8 +105,12 @@ for i in range(0, rows + 1):
 # 20
 # 10
 list1 = [10, 20, 30, 40, 50]
+for num in reversed(list1):
+    print(num)    
 
 
+# for num in list1:
+#     print(num)
 
 
 # Exercise Question 9: Display -10 to -1 using for loop
