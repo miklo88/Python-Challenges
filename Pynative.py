@@ -36,19 +36,33 @@ https://pynative.com/print-pattern-python-examples/ (patterns in python)
 #     #line after each row to display pattern correctly
 #     print(" ")
 #RETURNS 
-# 1  
-# 2 2  
-# 3 3 3  
-# 4 4 4 4  
-# 5 5 5 5 5 
+# 1
+# 2 2
+# 3 3 3
+# 4 4 4 4
+# 5 5 5 5 5
 #####ANSWER
 # rows = 5
 # for row in range(1, rows + 1):
 #     for column in range(1, row + 1):
 #         print(column, end=' ')
 #     print("")
+
 #Exercise Question 3: Accept number from user and calculate the sum of all number between 1 and given number
-#3.expected output For example user given 10 so the output should be 55
+# .expected output For example user given 10 so the output should be 55
+
+#EXAMPLE OF SETTING THE USER INPUT TO A SPECIFIC NUMBER
+# input for user to enter in a number
+# x = int(input(f'List numbers: '))
+# #gotta go through a range from 1 to 11 and add each number up
+# #initializing an empty list
+# stored_list = []
+# for i in range(x):
+#     totalnum = int(input(f'Enter number'))
+#     stored_list.append(totalnum)
+# print(f'sum of all numbers: ', sum(stored_list))
+    
+    
 
 # Exercise Question 4: Print multiplication table of given number
 #4.expected output For example num = 2 so the output should be
@@ -63,9 +77,8 @@ https://pynative.com/print-pattern-python-examples/ (patterns in python)
 # 18
 # 20
 #####ANSWER
-
-for i in range(1, 11):
-    print(i * 2)
+# for i in range(1, 11):
+#     print(i * 2)
 
 # Exercise Question 5: Given a list iterate it and display numbers which are divisible by 5 and if you find number greater than 150 stop the loop iteration
 #5.expected output list1 = [12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200]
