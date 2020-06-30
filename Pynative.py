@@ -50,7 +50,13 @@ https://pynative.com/print-pattern-python-examples/ (patterns in python)
 
 #Exercise Question 3: Accept number from user and calculate the sum of all number between 1 and given number
 # .expected output For example user given 10 so the output should be 55
-
+numbers = int(input(f'Add numbers: '))
+stored_list = []
+for num in range(1, numbers + 1):
+    total = num
+    stored_list.append(total)
+print(f'Total numbers:', sum(stored_list))
+# print(stored_list)
 #EXAMPLE OF SETTING THE USER INPUT TO A SPECIFIC NUMBER
 # input for user to enter in a number
 # x = int(input(f'List numbers: '))
