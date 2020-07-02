@@ -37,8 +37,8 @@
 #     # print(f'list B: ', i[1])
 #     c = i[0]+i[1]
 #     print(c, "\n")
-    # c = sum(i[0],i[1])
-# print(c)
+#     # c = sum(i[0],i[1])
+# # print(c)
 
 #example using map, zip and sum
 # result = tuple(map(sum, zip(a, b)))
@@ -54,26 +54,57 @@
 # IF ELSE statements
 # you have two lists. for each element in the list compare them and add the 
 # smaller value to a new list.
-a = [5,2,10,14]
-b = [3,8,15,12]
+a = [5,2,10,14,15]
+b = [3,8,15,12,15]
 f = ['z','x','v','b']
 c = []
 d = []
 
-for a1 in a:
-    print(a1)
-    for b1 in b:
-        print(b1)
+# for a1 in a:
+#     print(a1)
+#     for b1 in b:
+#         print(b1)
+# for lists
+for i in zip(a,b):
+    if i[0] > i[1]:
+        c.append(i[1])
+    elif i[0] < i[1]:
+        c.append(i[0])
+    else:
+        d.append(set(i))
+    # print(i)
+c = tuple(c)
 
-# for i in zip(a,b):
-#     # print(i)
-#     # print(i[0])
-#     if i[0] > i[1]:
-#         print('true')
-#     else:
-#         print('false')
-#     print(i)
 # print(c)
+for i in c:
+    print(i)
+print(d)
+# print(e)
+
+
+# a = 5,2,10,14,15
+# b = 3,8,15,12,15
+# c = ()
+# d = ()
+# #for tuples
+# for i in zip(a,b):
+#     if i[0] > i[1]:
+#         #add to c
+#         # c = i[1]
+#         print('b', i[1])
+#         # c = i[1::]
+#     elif i[0] < i[1]:
+#         #add to c
+#         # c = i[0]
+#         print('a', i[0])
+#         # c = i[0::]
+#     else:
+#         d = set(i)
+    
+#         #add to another value
+# # print(c, "\n")
+# # print(c)
+# print(f'these are the same value', d)
 # for i in a:
 #     if i >= 5:
 #         c.append(i)
