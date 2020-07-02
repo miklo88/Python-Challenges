@@ -28,23 +28,15 @@
     #for loops loop how many times given to them. if no range, they loop by default num of elements in the list.
 
 # TRY AGAIN WITHOUT RETURNING LIST
-a = 294481, 594273, 868711, 841704, 308452, 265913, 675622, 392854, 13626, 545908, 338023, 944651, 123590, 148218, 239998 
-b = 522092, 838653, 273260, 87247, 871267, 858192, 248003, 219925, 992411, 848315, 178179, 740628, 915433, 800864, 476303
-c = ()
-
+###CODE ABBEY 3
+# a = 294481, 594273, 868711, 841704, 308452, 265913, 675622, 392854, 13626, 545908, 338023, 944651, 123590, 148218, 239998 
+# b = 522092, 838653, 273260, 87247, 871267, 858192, 248003, 219925, 992411, 848315, 178179, 740628, 915433, 800864, 476303
+# c = ()
 # for i in zip(a,b):
-#     # c = sum(i)
-#     # c = a[i]+b[i]
-#     # c = sum(a[0:]+b[0:])
-#     # print(sum(i))
-#     # c = i
-    # print(i)
-# # print(c)
-for i in zip(a,b):
-    # print(f'list A: ', i[0])
-    # print(f'list B: ', i[1])
-    c = i[0]+i[1]
-    print(c, "\n")
+#     # print(f'list A: ', i[0])
+#     # print(f'list B: ', i[1])
+#     c = i[0]+i[1]
+#     print(c, "\n")
     # c = sum(i[0],i[1])
 # print(c)
 
@@ -57,11 +49,47 @@ for i in zip(a,b):
 # for num1B in b:
 #     print(f'List B: {num1B}')
 
-# print(len(a))
-# print(type(b))
-# print(type(c))
-# print(sum(a))
-# c = a[0]+b[0]
-# print(c)
-# print(b[0])
+###CODE ABBEY 4
+# Conditional programming
+# IF ELSE statements
+# you have two lists. for each element in the list compare them and add the 
+# smaller value to a new list.
+a = [5,2,10,14]
+b = [3,8,15,12]
+f = ['z','x','v','b']
+c = []
+d = []
 
+for a1 in a:
+    print(a1)
+    for b1 in b:
+        print(b1)
+
+# for i in zip(a,b):
+#     # print(i)
+#     # print(i[0])
+#     if i[0] > i[1]:
+#         print('true')
+#     else:
+#         print('false')
+#     print(i)
+# print(c)
+# for i in a:
+#     if i >= 5:
+#         c.append(i)
+#     elif i < 5:
+#         d.append(i)
+# for i in b:
+#     if i >= 5:
+#         c.append(i)
+#     elif i < 5:
+#         d.append(i)
+# # for i in b:
+#     # c.append(i)
+# print(f'C values: ',c)
+# print(f'D values: ',d)
+# if len(c) > 2:
+#     print('YES')
+# else:
+#     print('NOPE')
+# print(list(a))
