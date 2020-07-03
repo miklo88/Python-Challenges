@@ -49,37 +49,37 @@
 # for num1B in b:
 #     print(f'List B: {num1B}')
 
-###CODE ABBEY 4
-# Conditional programming
-# IF ELSE statements
-# you have two lists. for each element in the list compare them and add the 
-# smaller value to a new list.
-a = [5,2,10,14,15]
-b = [3,8,15,12,15]
-f = ['z','x','v','b']
-c = []
-d = []
+# ###CODE ABBEY 4
+# # Conditional programming
+# # IF ELSE statements
+# # you have two lists. for each element in the list compare them and add the 
+# # smaller value to a new list.
+# a = [5,2,10,14,15]
+# b = [3,8,15,12,15]
+# f = ['z','x','v','b']
+# c = []
+# d = []
 
-# for a1 in a:
-#     print(a1)
-#     for b1 in b:
-#         print(b1)
-# for lists
-for i in zip(a,b):
-    if i[0] > i[1]:
-        c.append(i[1])
-    elif i[0] < i[1]:
-        c.append(i[0])
-    else:
-        d.append(set(i))
-    # print(i)
-c = tuple(c)
+# # for a1 in a:
+# #     print(a1)
+# #     for b1 in b:
+# #         print(b1)
+# # for lists
+# for i in zip(a,b):
+#     if i[0] > i[1]:
+#         c.append(i[1])
+#     elif i[0] < i[1]:
+#         c.append(i[0])
+#     else:
+#         d.append(set(i))
+#     # print(i)
+# c = tuple(c)
 
-# print(c)
-for i in c:
-    print(i)
-print(d)
-# print(e)
+# # print(c)
+# for i in c:
+#     print(i)
+# print(d)
+# # print(e)
 
 
 # a = 5,2,10,14,15
@@ -105,22 +105,53 @@ print(d)
 # # print(c, "\n")
 # # print(c)
 # print(f'these are the same value', d)
-# for i in a:
-#     if i >= 5:
-#         c.append(i)
-#     elif i < 5:
-#         d.append(i)
-# for i in b:
-#     if i >= 5:
-#         c.append(i)
-#     elif i < 5:
-#         d.append(i)
-# # for i in b:
-#     # c.append(i)
-# print(f'C values: ',c)
-# print(f'D values: ',d)
-# if len(c) > 2:
-#     print('YES')
-# else:
-#     print('NOPE')
-# print(list(a))
+
+#5 MINIMUM OF THREE CODE ABBEY
+# EACH ARRAY OR LIST HAS THREE VALUES AND YOU MUST COMPARE THEM AND RETURN THE MIN
+# a = int(input(f'How many numbers will you use?: '))
+# arr = []
+# for i in range(a):
+#     numbers = int(input(f'Add numbers aqui: '))
+#     arr.append(numbers)
+# print(arr)
+
+
+
+b = []
+c = []
+for i in range(10):
+    numbers = int(input(f'Add numbers aqui: '))
+    b.append(numbers)
+    if len(b) == 4:
+        print(b)
+    elif len(b) == 6:
+        c.append(b)
+        print(c)
+    else:
+        pass
+
+# so i have to add values to a list. when list meets that number of values 
+# i create new list and repeat the same process as before.
+
+# FIND THE MAXIMUM AND MINIMUM OF A SEQUENCE OF VALUES
+#######6 MAXIMUM OF ARRAY CODE ABBEY
+#utilizing the input.
+# a = int(input(f'How many numbers are you going to input?: '))
+# z = []
+# for i in range(a):
+#     g = int(input(f'Add numbers aqui: '))
+#     z.append(g)
+#     e = min(z)
+#     d = max(z)
+# print(z)
+# print(d)
+# print(e)
+
+# arr = 37693, -1940, 42498, -73997, 8986, -67579, -61965, -17953, 33752, -77831, -69836, -5621, 25660, -33299, -46304, -53168, -45000, 21851, -51120, -76292, 69869, -13016, -46266, 63176, 74966, 14705, -69498, 6202, 35316, 62225, 66957, -6990, -19714, 29456, -987, 69272, 41876, 17047, -28681, -4372, 19215, -18517, 70007, -35125, 28183, -56297, -8293, 63182, 45554, 20587, 66889, 35423, -72429, -59376, 18600, -77463, 35328, 29101, 8738, -9355, 11327, -4304, 63654, 71613, -54847, -17333, 60885, 67029, 79714, -47796, -17342, 18929, 13687, -27335, 63804, -38130, -3632, -24488, -54947, -38078, 76098, -68058, 77345, -76331, -47434, 15945, -73794, 67893, -34953, 14944, -21461, 56373, -69360, -37807, 47986, -44207, 24860, 28871, -57178, 24574, 61075, 5479, -36496, -5238, 58144, -52692, 36632, -25488, 2820, 61684, 16433, -1082, 73626, 13778, 2587, -53808, -50276, 8793, -65915, -5230, -56263, -7376, -28856, -45623, 34817, -60870, -9831, -20323, 48001, 12990, -75748, 29077, -61530, -32245, -56160, 76613, -4937, 60471, -28875, 77882, 42156, 67558, -3199, 35782, 1337, 79388, 61973, 31060, 8181, 76058, -54169, 31917, -11318, -3025, 66294, -56501, 16105, -23537, 3176, -15894, 69453, 7428, -66816, -72077, 55183, -42976, -75463, -29753, -62504, -24339, -31871, 59651, -36780, 44930, 15433, 44556, 44318, -2594, -4383, -27501, -6536, 21448, -75584, 62146, -61577, 70709, -74355, 34527, -32827, 8821, -61366, -43373, -63750, -48183, -35451, 71432, -11159, -30915, -38321, 6336, 24746, 9808, -14013, 67965, -25262, -78580, 32522, -60943, -1174, -51861, -8445, 72290, 49586, -4029, 54436, 68009, -13319, 60081, 22536, 33853, -11098, 41169, 70479, 5152, 72986, -44971, -3416, -18173, 4114, 38263, 68162, -51139, -31928, -25850, -63173, 22809, -24430, 49348, 41865, 54395, 77487, -46579, 46685, 47074, 29391, 21121, 35083, -63928, 1202, -22381, 49925, 70104, -61211, 40405, -4743, -68225, 75433, 71840, -6398, -452, 30104, -18235, 28408, 78175, 35914, 45234, 20985, -68516, 14582, -17149, 65879, 12070, 16271, 32564, -20856, -34338, -26314, -65773, -18266, 54888, -8154, -48340, 44993, 10634, 72064, -39750, 22409, 67498, -47909, -63989, -12954, 62195, -2225, -64546, 60370, -46310, 60688, 1356, -34826, -4729
+# for i in arr:
+#     smallest = min(arr)
+#     largest = max(arr)
+# # print(arr)
+# # print(f'The lowest value is {smallest}')
+# # print(f'The largest value is {largest}')
+# print(largest, smallest)
