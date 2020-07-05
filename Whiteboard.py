@@ -115,20 +115,31 @@
 #     arr.append(numbers)
 # print(arr)
 
+init = int(input(f'Add all the values in to my sort logic: '))
+a = []
+# b = []
+# c = []
+
+for i in range(0, 3):
+    a.append(init + 1)
+    # b.append(inint)
+    # c.append(init)
+print(a)
 
 
-b = []
-c = []
-for i in range(10):
-    numbers = int(input(f'Add numbers aqui: '))
-    b.append(numbers)
-    if len(b) == 4:
-        print(b)
-    elif len(b) == 6:
-        c.append(b)
-        print(c)
-    else:
-        pass
+# b = []
+# c = []
+
+# for i in range(b):
+#     numbers = int(input(f'Add numbers aqui: '))
+#     b.append(numbers)
+#     if len(b) == 4:
+#         print(b)
+#     elif len(b) == 6:
+#         c.append(b)
+#         print(c)
+#     else:
+#         pass
 
 # so i have to add values to a list. when list meets that number of values 
 # i create new list and repeat the same process as before.
