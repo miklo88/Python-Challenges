@@ -115,16 +115,52 @@
 #     arr.append(numbers)
 # print(arr)
 
-init = int(input(f'Add all the values in to my sort logic: '))
+# init = int(input(f'Add all the values in to my sort logic: '))
 a = []
-# b = []
-# c = []
+b = []
+c = []
 
 for i in range(0, 3):
-    a.append(init + 1)
-    # b.append(inint)
-    # c.append(init)
+    init = int(input(f'Add all the values into a: '))
+    a.append(init)
+    if len(a) == 3:
+        for i in range(0, 3):
+            init = int(input(f'Add all the values into b: '))
+            b.append(init)
+    if len(b) == 3:
+        for i in range(0, 3):
+            init = int(input(f'Add all the values into c: '))
+            c.append(init)
+    # else:
+        # print('Check your code.')
 print(a)
+print(b)
+print(c)
+
+minimum = []
+for i in a:
+    if a[1] and a[2] > a[0]:
+        minimum.append(a[0])
+    elif a[0] and a[2] > a[1]:
+        minimum.append(a[1])
+    else:
+        minimum.append(a[2])
+for i in b:
+    if b[0] and b[1] > b[0]:
+        minimum.append(b[0])
+    elif b[0] and b[2] > b[1]:
+        minimum.append(b[1])
+    else:
+        minimum.append(b[2])
+for i in c:
+    if c[1] and c[2] > c[0]:
+        minimum.append(c[0])
+    elif c[0] and c[2] > c[1]:
+        minimum.append(c[1])
+    else:
+        minimum.append(c[2])
+
+print(minimum)
 
 
 # b = []
@@ -166,3 +202,11 @@ print(a)
 # # print(f'The lowest value is {smallest}')
 # # print(f'The largest value is {largest}')
 # print(largest, smallest)
+
+'''
+from carpal
+'''
+# Write a function named same_values() that takes two lists of numbers of equal size as parameters.
+# The function should return a list of the indices where the values were equal in lst1 and lst2.
+# For example, the following code should return [0, 2, 3]
+# same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5])
