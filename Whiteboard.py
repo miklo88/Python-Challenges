@@ -116,70 +116,62 @@
 # print(arr)
 
 # init = int(input(f'Add all the values in to my sort logic: '))
-a = []
-b = []
-c = []
-
-for i in range(0, 3):
-    init = int(input(f'Add all the values into a: '))
-    a.append(init)
-    if len(a) == 3:
-        for i in range(0, 3):
-            init = int(input(f'Add all the values into b: '))
-            b.append(init)
-    if len(b) == 3:
-        for i in range(0, 3):
-            init = int(input(f'Add all the values into c: '))
-            c.append(init)
-    # else:
-        # print('Check your code.')
-print(a)
-print(b)
-print(c)
-
-minimum = []
-for i in a:
-    if a[1] and a[2] > a[0]:
-        minimum.append(a[0])
-    elif a[0] and a[2] > a[1]:
-        minimum.append(a[1])
-    else:
-        minimum.append(a[2])
-for i in b:
-    if b[0] and b[1] > b[0]:
-        minimum.append(b[0])
-    elif b[0] and b[2] > b[1]:
-        minimum.append(b[1])
-    else:
-        minimum.append(b[2])
-for i in c:
-    if c[1] and c[2] > c[0]:
-        minimum.append(c[0])
-    elif c[0] and c[2] > c[1]:
-        minimum.append(c[1])
-    else:
-        minimum.append(c[2])
-
-print(minimum)
-
-
+# a = []
 # b = []
 # c = []
 
-# for i in range(b):
-#     numbers = int(input(f'Add numbers aqui: '))
-#     b.append(numbers)
-#     if len(b) == 4:
-#         print(b)
-#     elif len(b) == 6:
-#         c.append(b)
-#         print(c)
+# for i in range(0, 3):
+#     init = int(input(f'Add all the values into a: '))
+#     a.append(init)
+#     if len(a) == 3:
+#         for i in range(0, 3):
+#             init = int(input(f'Add all the values into b: '))
+#             b.append(init)
+#     if len(b) == 3:
+#         for i in range(0, 3):
+#             init = int(input(f'Add all the values into c: '))
+#             c.append(init)
+#     # else:
+#         # print('Check your code.')
+# print(a)
+# print(b)
+# print(c)
+
+# minimum = []
+# for i in a:
+#     if a[1] and a[2] > a[0]:
+#         minimum.append(a[0])
+#     elif a[0] and a[2] > a[1]:
+#         minimum.append(a[1])
 #     else:
-#         pass
+#         minimum.append(a[2])
+# for i in b:
+#     if b[0] and b[1] > b[0]:
+#         minimum.append(b[0])
+#     elif b[0] and b[2] > b[1]:
+#         minimum.append(b[1])
+#     else:
+#         minimum.append(b[2])
+# for i in c:
+#     if c[1] and c[2] > c[0]:
+#         minimum.append(c[0])
+#     elif c[0] and c[2] > c[1]:
+#         minimum.append(c[1])
+#     else:
+#         minimum.append(c[2])
 
-# so i have to add values to a list. when list meets that number of values 
-# i create new list and repeat the same process as before.
+# print(minimum)
 
+#be will be my range of values inserted into each list. 
+#now i have to figure out how to create a new list after three values are added. copy?
+
+lst = input(f'Insert three numbers here: ')
+# a = [1,2,3,4,5,6,7,8,9,10]
+# enumerateA = enumerate(a, 3)
+# print(list(enumerateA))
+# for new, i in enumerate(a):
+for i in enumerate(lst):
+    print(i)
 # FIND THE MAXIMUM AND MINIMUM OF A SEQUENCE OF VALUES
 #######6 MAXIMUM OF ARRAY CODE ABBEY
 #utilizing the input.
