@@ -187,24 +187,38 @@
 #         minimum.append(c[2])
 # print(minimum)
 
+lst = []
+for i in range(3):
+    nums = int(input(f'Add numbers: '))
+    lst.append(nums)
+print("list", lst)
+minimum = []
+for i in range(1):
+    if lst[0] and lst[1] > lst[2]:
+        minimum.append(lst[2])
+    elif lst[0] and lst[2] > lst[1]:
+        minimum.append(lst[1])
+    elif lst[1] and lst[2] > lst[0]:
+        minimum.append(lst[0])
+    else:
+        print('Danger Will Robinson')
+    for j in minimum:
+        print(j, "\n")
+print('minimum values', minimum)
+
+
+# for i in minimum:
+#     print(i)
 # a = int(input(f'Range of numbers: '))
-# lst = list(range(0, a))
+# lst = list(range(a))
+# # if len(a) == 3:
+# #     new_lst = list(range(a))
 # print("new list", lst)
-a = int(input(f'Range of numbers: '))
-lst = list(range(a, 3))
-# if len(a) == 3:
-#     new_lst = list(range(a))
-print("new list", lst)
-# print(new_lst)
+# # print(new_lst)
 
 # print("converting a range to a list")
 # even_list = list(range(0, 3, 1))
 # print("printing list", even_list)
-
-# if len(even_list) == 3:
-#     # new_input = input('something more: ')
-#     new_list = list(range(0,3,1))
-# print(new_list)
 
 
 # a = int(input("add nums here."))
