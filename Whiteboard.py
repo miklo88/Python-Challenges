@@ -115,7 +115,33 @@
 #     arr.append(numbers)
 # print(arr)
 
-# init = int(input(f'Add all the values in to my sort logic: '))
+# a = int(input(f'Add all the values into a: '))
+# b = int(input(f'Add all the values into b: '))
+# c = int(input(f'Add all the values into c: '))
+# minimum = []
+# # maximum = []
+# for i in range(1):
+#     if (a < b) and (a < c):
+#         minimum.append(a)
+#     elif (b < a) and (b < c):
+#         minimum.append(b)
+#     else:
+#         minimum.append(c)
+# # print(minimum[0])
+# print(minimum)
+
+# nums = int(input(f'Add numbers aqui: '))
+# arr = [nums for i in range(0, 3, 1)]
+# if arr[0] and arr[1] > arr[2]:
+#     print(arr[2])
+# elif arr[0] and arr[2] > arr[1]: 
+#     print(arr[1])
+# else:
+#     print(arr[0])
+# # arr = [[] for i in range(5)]
+# print(arr)
+
+# # # init = int(input(f'Add all the values in to my sort logic: '))
 # a = []
 # b = []
 # c = []
@@ -136,7 +162,7 @@
 # print(a)
 # print(b)
 # print(c)
-
+# # finding minimum values
 # minimum = []
 # for i in a:
 #     if a[1] and a[2] > a[0]:
@@ -159,19 +185,48 @@
 #         minimum.append(c[1])
 #     else:
 #         minimum.append(c[2])
-
 # print(minimum)
 
-#be will be my range of values inserted into each list. 
-#now i have to figure out how to create a new list after three values are added. copy?
+a = int(input(f'Add your numbers: '))
+lst = list(range(0, a))
+print("new list", lst)
 
-lst = input(f'Insert three numbers here: ')
+# print("converting a range to a list")
+# even_list = list(range(0, 3, 1))
+# print("printing list", even_list)
+
+# if len(even_list) == 3:
+#     # new_input = input('something more: ')
+#     new_list = list(range(0,3,1))
+# print(new_list)
+
+
+# a = int(input("add nums here."))
+# for i in a:
+#     new_list = list(range(a, 3, 1))
+#     print(new_list)
+# print("use of range to access Python list using index number")
+# sample_list = [10,20,30,40,50,60]
+# for i in range(len(sample_list)):
+#     print("list item at index", i, "is ", sample_list[i])
+
+#list()
+# new = int(input(f'Creating a new list. add nums: '))
 # a = [1,2,3,4,5,6,7,8,9,10]
-# enumerateA = enumerate(a, 3)
-# print(list(enumerateA))
-# for new, i in enumerate(a):
-for i in enumerate(lst):
-    print(i)
+# a = [1,2,3]
+# a = []
+# # new = input(f'Creating a new list. add nums: ')
+# for i in range(0, 3):
+#     # new = input(f'Creating a new list. add nums: ')
+#     new = int(input(f'Creating a new list. add nums: '))
+#     a.append(new)
+#     # a = list(new)
+# #     # if len(new) == 3:
+# #         # print(list(new))
+# #     # print(list(new))
+# print(a)
+
+
 # FIND THE MAXIMUM AND MINIMUM OF A SEQUENCE OF VALUES
 #######6 MAXIMUM OF ARRAY CODE ABBEY
 #utilizing the input.
@@ -195,6 +250,14 @@ for i in enumerate(lst):
 # # print(f'The largest value is {largest}')
 # print(largest, smallest)
 
+#ENUMERATE FUN 
+# lst = input(f'Insert three numbers here: ')
+# # a = [1,2,3,4,5,6,7,8,9,10]
+# # enumerateA = enumerate(a, 3)
+# # print(list(enumerateA))
+# # for new, i in enumerate(a):
+# for i in enumerate(lst):
+#     print(i)
 '''
 from carpal
 '''
