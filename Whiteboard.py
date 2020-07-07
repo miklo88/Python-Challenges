@@ -187,9 +187,15 @@
 #         minimum.append(c[2])
 # print(minimum)
 
-a = int(input(f'Add your numbers: '))
-lst = list(range(0, a))
+# a = int(input(f'Range of numbers: '))
+# lst = list(range(0, a))
+# print("new list", lst)
+a = int(input(f'Range of numbers: '))
+lst = list(range(a, 3))
+# if len(a) == 3:
+#     new_lst = list(range(a))
 print("new list", lst)
+# print(new_lst)
 
 # print("converting a range to a list")
 # even_list = list(range(0, 3, 1))
