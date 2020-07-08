@@ -187,26 +187,51 @@
 #         minimum.append(c[2])
 # print(minimum)
 
-lst = []
-for i in range(3):
-    nums = int(input(f'Add numbers: '))
-    lst.append(nums)
-print("list", lst)
-minimum = []
-for i in range(1):
-    if lst[0] and lst[1] > lst[2]:
-        minimum.append(lst[2])
-    elif lst[0] and lst[2] > lst[1]:
-        minimum.append(lst[1])
-    elif lst[1] and lst[2] > lst[0]:
-        minimum.append(lst[0])
-    else:
-        print('Danger Will Robinson')
-    for j in minimum:
-        print(j, "\n")
-print('minimum values', minimum)
+# # taking two inputs at a time 
+# x, y, z = input("Enter a three numbers: ").split()
+# print(x,y,z) 
+
+# for i in range(1):
+#     nums = input(f'Add numbers: ').split()
+#     lst = nums
+# print("list", lst)
 
 
+#adding numbers to a list function. three variables means three inputs.
+num1, num2, num3 = list(map(int, input(f'Add numbers: ').split()))
+#condensing all inputs into one variable.
+nums = num1,num2,num3
+#since min()brings home the smallest value we pass nums through it. 
+#also it takes only one arg so that is why three inputs are put into one variable.
+minOfNums = min(nums)
+#now i'm showing off
+minimumLst = []
+#created a list to store our minOfNums
+minimumLst.append(minOfNums)
+#the list of nums added in the input
+print('List of nums: ', list(nums))
+#the min() funct working
+print('Smallest value: ', minOfNums)
+#printing the smallest value in a list to show off.
+print(minimumLst)
+
+# minimum = []
+# for i in nums:
+#     if nums[0] < nums[1] and nums[2]:
+#         minimum.append(nums[0])
+#     elif nums[1] < nums[0] and nums[2]:
+#         minimum.append(nums[1])
+#     elif nums[2] < nums[1] and nums[0]:
+#         minimum.append(nums[2])
+#     else:
+#         print('Danger Will Robinson')
+#     # for j in minimum:
+#     #     print(j, "\n")
+# print('minimum values', minimum)
+
+# a = [2,4,6,8,10]
+# for i in a:
+#     print(min(a))
 # for i in minimum:
 #     print(i)
 # a = int(input(f'Range of numbers: '))
