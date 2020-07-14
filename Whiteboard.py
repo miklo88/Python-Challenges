@@ -191,29 +191,30 @@
 # x, y, z = input("Enter a three numbers: ").split()
 # print(x,y,z) 
 
-# for i in range(1):
-#     nums = input(f'Add numbers: ').split()
-#     lst = nums
-# print("list", lst)
+for i in range(3):
+    nums = input(f'Add numbers: ').split()
+    lst = []
+    lst.append(nums[0:])
+print("list", lst)
 
 
-#adding numbers to a list function. three variables means three inputs.
-num1, num2, num3 = list(map(int, input(f'Add numbers: ').split()))
-#condensing all inputs into one variable.
-nums = num1,num2,num3
-#since min()brings home the smallest value we pass nums through it. 
-#also it takes only one arg so that is why three inputs are put into one variable.
-minOfNums = min(nums)
-#now i'm showing off
-minimumLst = []
-#created a list to store our minOfNums
-minimumLst.append(minOfNums)
-#the list of nums added in the input
-print('List of nums: ', list(nums))
-#the min() funct working
-print('Smallest value: ', minOfNums)
-#printing the smallest value in a list to show off.
-print(minimumLst)
+# #adding numbers to a list function. three variables means three inputs.
+# num1, num2, num3 = list(map(int, input(f'Add numbers: ').split()))
+# #condensing all inputs into one variable.
+# nums = num1,num2,num3
+# #since min()brings home the smallest value we pass nums through it. 
+# #also it takes only one arg so that is why three inputs are put into one variable.
+# minOfNums = min(nums)
+# #now i'm showing off
+# minimumLst = []
+# #created a list to store our minOfNums
+# minimumLst.append(minOfNums)
+# #the list of nums added in the input
+# print('List of nums: ', list(nums))
+# #the min() funct working
+# print('Smallest value: ', minOfNums)
+# #printing the smallest value in a list to show off.
+# print(minimumLst)
 
 # minimum = []
 # for i in nums:
@@ -232,8 +233,8 @@ print(minimumLst)
 # a = [2,4,6,8,10]
 # for i in a:
 #     print(min(a))
-# for i in minimum:
-#     print(i)
+# # for i in minimum:
+# #     print(i)
 # a = int(input(f'Range of numbers: '))
 # lst = list(range(a))
 # # if len(a) == 3:
