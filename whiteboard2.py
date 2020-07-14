@@ -1,5 +1,3 @@
-# arr = num1,num2,num3 = input('Add  your nums aqui: ').split()
-
 # a = 93, 56, 89
 # arr = input(a).split()
 '''
@@ -26,32 +24,23 @@ bubble sort
 # print(min_ele)
 # # minimum of three nums
 # # arr = [23, 56, 89]
-a = 23, 22, 9
-# def min_three(num1,num2,num3):
-def min_three(a):
+# arr = 23, 22, 9
+# # def min_three(num1,num2,num3):
+# def min_three(arr):
 
     # a = num1,num2,num3
-    minimums = []
-    for i in a:
-        # minimums.append(min(a))
-        # minimums += min(a)
-        if (a[0] < a[1]) and (a[0] < a[2]):
-            minimums.append(a[0])
-        elif (a[1] < a[0]) and (a[1] < a[2]):
-            minimums.append(a[1])
-        else:
-            minimums.append(a[2])
-    # if (num1 < num2) and (num1 < num3):
-    #     minimums.append(num1)
-    #     # print(num1)
-    # elif (num2 < num1) and (num2 < num3):
-    #     minimums.append(num2)
-    #     # print(minimums)
-    # elif:
-    #     minimums.append(num3)
-    #     # print(num3)
-    return minimums
-print(min_three(a))
+#     minimums = []
+#     for i in a:
+#         # minimums.append(min(a))
+#         # minimums += min(a)
+#         if (a[0] < a[1]) and (a[0] < a[2]):
+#             minimums.append(a[0])
+#         elif (a[1] < a[0]) and (a[1] < a[2]):
+#             minimums.append(a[1])
+#         else:
+#             minimums.append(a[2])
+#     return minimums
+# print(min_three(a))
 # #add each minimum to a list of minimum nums
 # # minimums = []
 # # arr = int(input('Add  your nums aqui: '))
@@ -61,72 +50,71 @@ print(min_three(a))
 # #going to need to pass an input of three elements in an array
 # print(min_three(num1,num2,num3))
 # # print(min_three(a))
-'''input data
+'''
+To have more practice with conditional statements we are going to write a program which uses complex condition. I.e. 
+one if ... else statement could be (and should be) nested inside other to solve this problem.
+
+Several triplets of numbers are given to you. Your task is to select minimum among each of triplets.
+
+Input data will contain in the first line the number of triplets to follow.
+Next lines will contain one triplet each.
+Answer should contain selected minimums of triplets, separated by spaces.
+
+Example:
+
+input data
 3 
 7 3 5
 15 20 40
 300 550 137
-'''
-'''answer
+
+answer
 3 15 137
 '''
 
-# arr = -6871823, -7214482, 9046663
-# arr = 3309920, -2859897, 6761147 
-# arr = 4041018, -955437, -4904321
-# arr = -8787604, 2109328, 2010050
-# arr = 2393316, -5569518, -4861649
-# arr = 5430897, 5454130, 7235784
-# arr = 9676556, -4261898, 9659852
-# arr = 573839, -7101523, 1789629
-# arr = -5519173, 437219, -890803
-# arr = -2397006, 6071104, -4313865
-# arr = -4416481, 9199281, -1528347
-# arr = -5369818, 2509201, 5611756
-# arr = -8608670, -3449781, -5343681
-# arr = -3512992, -2237385, 6765646
-# arr = 8497058, -9844069, -8803872
-# arr = -6364590, 5586828, 6650258
-# arr = -9128805, 5263384, -7611639
-# arr = -9468953, -4162777, -4713163
-# arr = 2320675, 318050, 5724055
-# arr = -8570127, 7921044, 1795160
-# arr = -2883992, -6495437, 994441
-# arr = 5587661, -1865255, -6496357
-# arr = 1199417, -473926, 53861
-# arr = 5855736, 6013082, 7816476
-# arr = 2621383, 4510141, 7972406
-# arr = 3817510, 8145550, 3559234
-# arr = 467769, 9016745, -1177381
-# arr = 2856130, 9547791, 4659841
-# arr = 8142967, 1868467, -5022108
-
 # instructions = "example input. 12 45 78"
 # print(instructions)
-# arr = input('Enter three numbers here: ').split(' ')
+# # arr = input('Enter three numbers here: ').split(' ')
 # # arr = input(arr).split(' ')
-
 # def minimum_values(*args):
 #     min_ele = arr[0]
-
 #     for i in range(1, len(*args)):
 #         if arr[i] < min_ele:  
 #             min_ele = arr[i]
-
 #     return min_ele
-
 # print(minimum_values(arr))
-
 # print(minimum_values)
 
-# for i in minimum_values:
-#     print(i)
-# print(minimum)
+
 
 # number1 = int(input('Enter first number: '))
 # number2 = int(input('Enter second number: '))
 # number3 = int(input('Enter third number: '))
 
+# arr = list(map(int, input().split(' ')))
+
+# # print(num1, num2, num3 )
+# # arr = num1,num2,num3 = list(map(int, input().split(' ')))
+# # print(arr)
+
+# def smallest(arr):
+#     if (arr[0] < arr[1]) and (arr[0] < arr[2]):
+#         smallest_num = arr[0]
+#     elif (arr[1] < arr[0]) and (arr[1] < arr[2]):
+#         smallest_num = arr[1]
+#     else:
+#         smallest_num = arr[2]
+#     print("The smallest of the 3 numbers is : ", smallest_num)
+# smallest(arr)
+
+
+'''
+# num1, num2, num3 = arr
+# print(arr)
+# print(num1,num2,num3)
+# print(num2)
+# print(num3)
+# # num1, num2, num3 = list(map(int, input().split(' ')))
 # def smallest(num1, num2, num3):
 #     if (num1 < num2) and (num1 < num3):
 #         smallest_num = num1
@@ -135,4 +123,14 @@ print(min_three(a))
 #     else:
 #         smallest_num = num3
 #     print("The smallest of the 3 numbers is : ", smallest_num)
-# smallest(number1, number2, number3)
+# smallest(num1,num2,num3)
+'''
+a = input().split(' ')
+# a = 12, 4, 78
+print(a)
+minimum = []
+if a:
+    minimum.append(min(a))
+else:
+    pass
+print(minimum)
