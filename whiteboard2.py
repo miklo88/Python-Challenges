@@ -106,8 +106,6 @@ answer
 #         smallest_num = arr[2]
 #     print("The smallest of the 3 numbers is : ", smallest_num)
 # smallest(arr)
-
-
 '''
 # num1, num2, num3 = arr
 # print(arr)
@@ -125,12 +123,3 @@ answer
 #     print("The smallest of the 3 numbers is : ", smallest_num)
 # smallest(num1,num2,num3)
 '''
-a = input().split(' ')
-# a = 12, 4, 78
-print(a)
-minimum = []
-if a:
-    minimum.append(min(a))
-else:
-    pass
-print(minimum)
