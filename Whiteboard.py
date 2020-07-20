@@ -151,9 +151,9 @@ def minimum_values(arr):
         #third item
         else:
             minimum.append(arr[i][2])
-
+    #converting to tuples
     return tuple(minimum)
-
+#unpacking tuples because i need to return the data without commas or parens.
 for j in minimum_values(arr):
     print(j, '\n')
 # print(minimum_values(arr))
