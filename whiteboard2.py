@@ -71,69 +71,66 @@ input data
 answer
 3 15 137
 '''
-arr =[
-[-1255532, 4283883, 2388396],
-[-8215356, -8118949, -2807782],
-[8944433, -7947007, -9974595],
-[2334392, 4004768, -4801936]
-# [8003813, 4370632, -2536674]
-# [-2553545, 1471725, 4899701]
-# [-307638, -1683735, -3608132]
-# [-1898475, -3476924, -6410612]
-# [9763460, 3912590, -7318079]
-# [1262758, -7751466, -8943608]
-# [-6216487, 993002, 5340275]
-# [6171908, 2777645, 7221325]
-# [-6635874, 1722079, 9274318]
-# [-6610469, -5943529, 3279086]
-# [-1412406, -7939716, -2350281]
-# [6050919, -493261, 9121444]
-# [950621, 9199101, -2562291]
-# [7342488, -2699374, 3960784]
-# [-9068123, -2935914, -2126625]
-# [-6386203, 8326843, 121909]
-# [-5329811, -7889644, -8885089]
-# [-9989536, 8282264, 3892555]
-# [7231789, -8353609, -4385366]
-# [6506107, -4964079, -328896]
-# [-214806, 3623515, 1731388]
-# [7434912, -325566, -8761872]
-]
-###MUCHACHO- just find a way to insert another if else into this function.
-instructions = "example input. 12 45 78"
-print(instructions)
+arr = (
+(-1255532, 4283883, 2388396),
+(-8215356, -8118949, -2807782),
+(8944433, -7947007, -9974595),
+(2334392, 4004768, -4801936),
+(8003813, 4370632, -2536674),
+(-2553545, 1471725, 4899701),
+(-307638, -1683735, -3608132),
+(-1898475, -3476924, -6410612),
+(9763460, 3912590, -7318079),
+(1262758, -7751466, -8943608),
+(-6216487, 993002, 5340275),
+(6171908, 2777645, 7221325),
+(-6635874, 1722079, 9274318),
+(-6610469, -5943529, 3279086),
+(-1412406, -7939716, -2350281),
+(6050919, -493261, 9121444),
+(950621, 9199101, -2562291),
+(7342488, -2699374, 3960784),
+(-9068123, -2935914, -2126625),
+(-6386203, 8326843, 121909),
+(-5329811, -7889644, -8885089),
+(-9989536, 8282264, 3892555),
+(7231789, -8353609, -4385366),
+(6506107, -4964079, -328896),
+(-214806, 3623515, 1731388),
+(7434912, -325566, -8761872)
+)
+# instructions = "example input. 12 45 78"
+# print(instructions)
 # arr = input('Enter three numbers here: ').split(' ')
 # arr = input().split(' ')
-def minimum_values(*args):
-    min_ele = arr[0]
-    minimums = []
-    for i in range(1, len(*args)):
-        if arr[i] < min_ele:  
-            min_ele = arr[i]
-            minimums.append(min_ele)
-        return min_ele
+# def minimum_values(arr):
+#     min_ele = arr[0]
+    # for i in range(0, len(arr)):     
+#       if arr[0] < min_ele:
+            # min_ele = arr[0]
+#     return min_ele
+# print(len(arr))
+# print(arr)
+# print(minimum_values(arr))
+
+def minimum_values(arr):
+    minimum = []
+    # looping over all sub  arrays in the array
+    for i in range(0, len(arr)):
+        # print(len(arr))
+        # comparing each sub array item
+        if (arr[i][0] < arr[i][1]) and (arr[i][0] < arr[i][2]):
+            minimum.append(arr[i][0])
+                
+        elif (arr[i][1] < arr[i][0]) and (arr[i][1] < arr[i][2]):
+            minimum.append(arr[i][1])
+        else:
+            minimum.append(arr[i][2])
+    return minimum
+# print(arr)
+
 print(minimum_values(arr))
 
-
-# number1 = int(input('Enter first number: '))
-# number2 = int(input('Enter second number: '))
-# number3 = int(input('Enter third number: '))
-
-# arr = list(map(int, input().split(' ')))
-
-# # print(num1, num2, num3 )
-# # arr = num1,num2,num3 = list(map(int, input().split(' ')))
-# # print(arr)
-
-# def smallest(arr):
-#     if (arr[0] < arr[1]) and (arr[0] < arr[2]):
-#         smallest_num = arr[0]
-#     elif (arr[1] < arr[0]) and (arr[1] < arr[2]):
-#         smallest_num = arr[1]
-#     else:
-#         smallest_num = arr[2]
-#     print("The smallest of the 3 numbers is : ", smallest_num)
-# smallest(arr)
 '''
 # num1, num2, num3 = arr
 # print(arr)
