@@ -108,170 +108,57 @@
 
 #5 MINIMUM OF THREE CODE ABBEY
 # EACH ARRAY OR LIST HAS THREE VALUES AND YOU MUST COMPARE THEM AND RETURN THE MIN
-# a = int(input(f'How many numbers will you use?: '))
-# arr = []
-# for i in range(a):
-#     numbers = int(input(f'Add numbers aqui: '))
-#     arr.append(numbers)
-# print(arr)
-
-# a = int(input(f'Add all the values into a: '))
-# b = int(input(f'Add all the values into b: '))
-# c = int(input(f'Add all the values into c: '))
+arr = [
+(-1255532, 4283883, 2388396),
+(-8215356, -8118949, -2807782),
+(8944433, -7947007, -9974595),
+(2334392, 4004768, -4801936),
+(8003813, 4370632, -2536674),
+(-2553545, 1471725, 4899701),
+(-307638, -1683735, -3608132),
+(-1898475, -3476924, -6410612),
+(9763460, 3912590, -7318079),
+(1262758, -7751466, -8943608),
+(-6216487, 993002, 5340275),
+(6171908, 2777645, 7221325),
+(-6635874, 1722079, 9274318),
+(-6610469, -5943529, 3279086),
+(-1412406, -7939716, -2350281),
+(6050919, -493261, 9121444),
+(950621, 9199101, -2562291),
+(7342488, -2699374, 3960784),
+(-9068123, -2935914, -2126625),
+(-6386203, 8326843, 121909),
+(-5329811, -7889644, -8885089),
+(-9989536, 8282264, 3892555),
+(7231789, -8353609, -4385366),
+(6506107, -4964079, -328896),
+(-214806, 3623515, 1731388),
+(7434912, -325566, -8761872)
+]
 # minimum = []
-# # maximum = []
-# for i in range(1):
-#     if (a < b) and (a < c):
-#         minimum.append(a)
-#     elif (b < a) and (b < c):
-#         minimum.append(b)
-#     else:
-#         minimum.append(c)
-# # print(minimum[0])
-# print(minimum)
+def minimum_values(arr):
+    minimum = []
+    # looping over all sub  arrays in the array
+    for i in range(0, len(arr)):
+        # comparing each sub array item
+        #first item
+        if (arr[i][0] < arr[i][1]) and (arr[i][0] < arr[i][2]):
+            minimum.append(arr[i][0])
+        #second item
+        elif (arr[i][1] < arr[i][0]) and (arr[i][1] < arr[i][2]):
+            minimum.append(arr[i][1])
+        #third item
+        else:
+            minimum.append(arr[i][2])
 
-# nums = int(input(f'Add numbers aqui: '))
-# arr = [nums for i in range(0, 3, 1)]
-# if arr[0] and arr[1] > arr[2]:
-#     print(arr[2])
-# elif arr[0] and arr[2] > arr[1]: 
-#     print(arr[1])
-# else:
-#     print(arr[0])
-# # arr = [[] for i in range(5)]
-# print(arr)
+    return tuple(minimum)
 
-# # # init = int(input(f'Add all the values in to my sort logic: '))
-# a = []
-# b = []
-# c = []
-
-# for i in range(0, 3):
-#     init = int(input(f'Add all the values into a: '))
-#     a.append(init)
-#     if len(a) == 3:
-#         for i in range(0, 3):
-#             init = int(input(f'Add all the values into b: '))
-#             b.append(init)
-#     if len(b) == 3:
-#         for i in range(0, 3):
-#             init = int(input(f'Add all the values into c: '))
-#             c.append(init)
-#     # else:
-#         # print('Check your code.')
-# print(a)
-# print(b)
-# print(c)
-# # finding minimum values
-# minimum = []
-# for i in a:
-#     if a[1] and a[2] > a[0]:
-#         minimum.append(a[0])
-#     elif a[0] and a[2] > a[1]:
-#         minimum.append(a[1])
-#     else:
-#         minimum.append(a[2])
-# for i in b:
-#     if b[0] and b[1] > b[0]:
-#         minimum.append(b[0])
-#     elif b[0] and b[2] > b[1]:
-#         minimum.append(b[1])
-#     else:
-#         minimum.append(b[2])
-# for i in c:
-#     if c[1] and c[2] > c[0]:
-#         minimum.append(c[0])
-#     elif c[0] and c[2] > c[1]:
-#         minimum.append(c[1])
-#     else:
-#         minimum.append(c[2])
-# print(minimum)
-
-# # taking two inputs at a time 
-# x, y, z = input("Enter a three numbers: ").split()
-# print(x,y,z) 
-
-for i in range(3):
-    nums = input(f'Add numbers: ').split()
-    lst = []
-    lst.append(nums[0:])
-print("list", lst)
-
-
-# #adding numbers to a list function. three variables means three inputs.
-# num1, num2, num3 = list(map(int, input(f'Add numbers: ').split()))
-# #condensing all inputs into one variable.
-# nums = num1,num2,num3
-# #since min()brings home the smallest value we pass nums through it. 
-# #also it takes only one arg so that is why three inputs are put into one variable.
-# minOfNums = min(nums)
-# #now i'm showing off
-# minimumLst = []
-# #created a list to store our minOfNums
-# minimumLst.append(minOfNums)
-# #the list of nums added in the input
-# print('List of nums: ', list(nums))
-# #the min() funct working
-# print('Smallest value: ', minOfNums)
-# #printing the smallest value in a list to show off.
-# print(minimumLst)
-
-# minimum = []
-# for i in nums:
-#     if nums[0] < nums[1] and nums[2]:
-#         minimum.append(nums[0])
-#     elif nums[1] < nums[0] and nums[2]:
-#         minimum.append(nums[1])
-#     elif nums[2] < nums[1] and nums[0]:
-#         minimum.append(nums[2])
-#     else:
-#         print('Danger Will Robinson')
-#     # for j in minimum:
-#     #     print(j, "\n")
-# print('minimum values', minimum)
-
-# a = [2,4,6,8,10]
-# for i in a:
-#     print(min(a))
-# # for i in minimum:
-# #     print(i)
-# a = int(input(f'Range of numbers: '))
-# lst = list(range(a))
-# # if len(a) == 3:
-# #     new_lst = list(range(a))
-# print("new list", lst)
-# # print(new_lst)
-
-# print("converting a range to a list")
-# even_list = list(range(0, 3, 1))
-# print("printing list", even_list)
-
-
-# a = int(input("add nums here."))
-# for i in a:
-#     new_list = list(range(a, 3, 1))
-#     print(new_list)
-# print("use of range to access Python list using index number")
-# sample_list = [10,20,30,40,50,60]
-# for i in range(len(sample_list)):
-#     print("list item at index", i, "is ", sample_list[i])
-
-#list()
-# new = int(input(f'Creating a new list. add nums: '))
-# a = [1,2,3,4,5,6,7,8,9,10]
-# a = [1,2,3]
-# a = []
-# # new = input(f'Creating a new list. add nums: ')
-# for i in range(0, 3):
-#     # new = input(f'Creating a new list. add nums: ')
-#     new = int(input(f'Creating a new list. add nums: '))
-#     a.append(new)
-#     # a = list(new)
-# #     # if len(new) == 3:
-# #         # print(list(new))
-# #     # print(list(new))
-# print(a)
-
+for j in minimum_values(arr):
+    print(j, '\n')
+# print(minimum_values(arr))
+ # print('two', minimum)
+# print(smallest)
 
 # FIND THE MAXIMUM AND MINIMUM OF A SEQUENCE OF VALUES
 #######6 MAXIMUM OF ARRAY CODE ABBEY
