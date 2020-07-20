@@ -72,17 +72,17 @@ answer
 3 15 137
 '''
 
-# instructions = "example input. 12 45 78"
-# print(instructions)
-# # arr = input('Enter three numbers here: ').split(' ')
-# # arr = input(arr).split(' ')
-# def minimum_values(*args):
-#     min_ele = arr[0]
-#     for i in range(1, len(*args)):
-#         if arr[i] < min_ele:  
-#             min_ele = arr[i]
-#     return min_ele
-# print(minimum_values(arr))
+instructions = "example input. 12 45 78"
+print(instructions)
+# arr = input('Enter three numbers here: ').split(' ')
+arr = input().split(' ')
+def minimum_values(*args):
+    min_ele = arr[0]
+    for i in range(0, len(*args)):
+        if arr[i] < min_ele:  
+            min_ele = arr[i]
+    return min_ele
+print(minimum_values(arr))
 # print(minimum_values)
 
 
