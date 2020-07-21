@@ -6,6 +6,7 @@ print out a message addressed to them that tells them the year that they will tu
 UPER - how will i calculate when they will turn 100 years old?
 
 '''
+
 #getting user input
 #manipulating strings
 
@@ -21,3 +22,5 @@ UPER - how will i calculate when they will turn 100 years old?
 #     return years
 
 # print(f'In {age_calc(age)} years you will be 100!')
+#build a class component that does this as well
+#recursion ?

@@ -1,5 +1,7 @@
+'''
 #CODE ABBEY 1
 # #print the sum of all the numbers in the list.
+'''
 # numbers = [658, 1263, 1077, 806, 1083, 842, 751, 425, 238, 97, 449, 641, 908, 399, 1296, 796, 1256, 638, 682, 324, 295, 1048, 123, 439, 929, 499, 425, 974, 853, 676, 485, 210, 638, 261, 1007, 421, 1094, 458, 836, 32, 545, 1276, 664]
 # #easy way of doing it
 # print(sum(numbers)) #28817
@@ -12,9 +14,10 @@
 # numbers = [658, 1263, 1077, 806, 1083, 842, 751, 425, 238, 97, 449, 641, 908, 399, 1296, 796, 1256, 638, 682, 324, 295, 1048, 123, 439, 929, 499, 425, 974, 853, 676, 485, 210, 638, 261, 1007, 421, 1094, 458, 836, 32, 545, 1276, 664]
 # print(sum_of_nums(numbers)) #28817
 
-
+'''
 ###CODE ABBEY 2
 ### print the sum of each list added to one another
+'''
 # numbers1 = [505058, 851325, 706933, 873782, 134329, 685105, 309121, 551519, 66974, 531212, 651845, 13308]
 # numbers2 = [940896, 411618, 151664, 487095, 140746, 391224, 591185, 865793, 452347, 816587, 321173, 406687]
 # results = []
@@ -26,9 +29,10 @@
 #return [1445954, 1262943, 858597, 1360877, 275075, 1076329, 900306, 1417312, 519321, 1347799, 973018, 419995]
     #this gives me 12 lists of the same list numbers1
     #for loops loop how many times given to them. if no range, they loop by default num of elements in the list.
-
+'''
 # TRY AGAIN WITHOUT RETURNING LIST
 ###CODE ABBEY 3
+'''
 # a = 294481, 594273, 868711, 841704, 308452, 265913, 675622, 392854, 13626, 545908, 338023, 944651, 123590, 148218, 239998 
 # b = 522092, 838653, 273260, 87247, 871267, 858192, 248003, 219925, 992411, 848315, 178179, 740628, 915433, 800864, 476303
 # c = ()
@@ -48,12 +52,13 @@
 #     print(f'List A: {num1A}')
 # for num1B in b:
 #     print(f'List B: {num1B}')
-
+'''
 # ###CODE ABBEY 4
 # # Conditional programming
 # # IF ELSE statements
 # # you have two lists. for each element in the list compare them and add the 
 # # smaller value to a new list.
+'''
 # a = [5,2,10,14,15]
 # b = [3,8,15,12,15]
 # f = ['z','x','v','b']
@@ -105,64 +110,66 @@
 # # print(c, "\n")
 # # print(c)
 # print(f'these are the same value', d)
-
+'''
 #5 MINIMUM OF THREE CODE ABBEY
 # EACH ARRAY OR LIST HAS THREE VALUES AND YOU MUST COMPARE THEM AND RETURN THE MIN
-arr = [
-(-1255532, 4283883, 2388396),
-(-8215356, -8118949, -2807782),
-(8944433, -7947007, -9974595),
-(2334392, 4004768, -4801936),
-(8003813, 4370632, -2536674),
-(-2553545, 1471725, 4899701),
-(-307638, -1683735, -3608132),
-(-1898475, -3476924, -6410612),
-(9763460, 3912590, -7318079),
-(1262758, -7751466, -8943608),
-(-6216487, 993002, 5340275),
-(6171908, 2777645, 7221325),
-(-6635874, 1722079, 9274318),
-(-6610469, -5943529, 3279086),
-(-1412406, -7939716, -2350281),
-(6050919, -493261, 9121444),
-(950621, 9199101, -2562291),
-(7342488, -2699374, 3960784),
-(-9068123, -2935914, -2126625),
-(-6386203, 8326843, 121909),
-(-5329811, -7889644, -8885089),
-(-9989536, 8282264, 3892555),
-(7231789, -8353609, -4385366),
-(6506107, -4964079, -328896),
-(-214806, 3623515, 1731388),
-(7434912, -325566, -8761872)
-]
-# minimum = []
-def minimum_values(arr):
-    minimum = []
-    # looping over all sub  arrays in the array
-    for i in range(0, len(arr)):
-        # comparing each sub array item
-        #first item
-        if (arr[i][0] < arr[i][1]) and (arr[i][0] < arr[i][2]):
-            minimum.append(arr[i][0])
-        #second item
-        elif (arr[i][1] < arr[i][0]) and (arr[i][1] < arr[i][2]):
-            minimum.append(arr[i][1])
-        #third item
-        else:
-            minimum.append(arr[i][2])
-    #converting to tuples
-    return tuple(minimum)
-#unpacking tuples because i need to return the data without commas or parens.
-for j in minimum_values(arr):
-    print(j, '\n')
-# print(minimum_values(arr))
- # print('two', minimum)
-# print(smallest)
-
+'''
+# arr = [
+# (-1255532, 4283883, 2388396),
+# (-8215356, -8118949, -2807782),
+# (8944433, -7947007, -9974595),
+# (2334392, 4004768, -4801936),
+# (8003813, 4370632, -2536674),
+# (-2553545, 1471725, 4899701),
+# (-307638, -1683735, -3608132),
+# (-1898475, -3476924, -6410612),
+# (9763460, 3912590, -7318079),
+# (1262758, -7751466, -8943608),
+# (-6216487, 993002, 5340275),
+# (6171908, 2777645, 7221325),
+# (-6635874, 1722079, 9274318),
+# (-6610469, -5943529, 3279086),
+# (-1412406, -7939716, -2350281),
+# (6050919, -493261, 9121444),
+# (950621, 9199101, -2562291),
+# (7342488, -2699374, 3960784),
+# (-9068123, -2935914, -2126625),
+# (-6386203, 8326843, 121909),
+# (-5329811, -7889644, -8885089),
+# (-9989536, 8282264, 3892555),
+# (7231789, -8353609, -4385366),
+# (6506107, -4964079, -328896),
+# (-214806, 3623515, 1731388),
+# (7434912, -325566, -8761872)
+# ]
+# # minimum = []
+# def minimum_values(arr):
+#     minimum = []
+#     # looping over all sub  arrays in the array
+#     for i in range(0, len(arr)):
+#         # comparing each sub array item
+#         #first item
+#         if (arr[i][0] < arr[i][1]) and (arr[i][0] < arr[i][2]):
+#             minimum.append(arr[i][0])
+#         #second item
+#         elif (arr[i][1] < arr[i][0]) and (arr[i][1] < arr[i][2]):
+#             minimum.append(arr[i][1])
+#         #third item
+#         else:
+#             minimum.append(arr[i][2])
+#     #converting to tuples
+#     return tuple(minimum)
+# #unpacking tuples because i need to return the data without commas or parens.
+# for j in minimum_values(arr):
+#     print(j, '\n')
+# # print(minimum_values(arr))
+#  # print('two', minimum)
+# # print(smallest)
+'''
 # FIND THE MAXIMUM AND MINIMUM OF A SEQUENCE OF VALUES
 #######6 MAXIMUM OF ARRAY CODE ABBEY
 #utilizing the input.
+'''
 # a = int(input(f'How many numbers are you going to input?: '))
 # z = []
 # for i in range(a):
@@ -182,8 +189,9 @@ for j in minimum_values(arr):
 # # print(f'The lowest value is {smallest}')
 # # print(f'The largest value is {largest}')
 # print(largest, smallest)
-
+'''
 #ENUMERATE FUN 
+'''
 # lst = input(f'Insert three numbers here: ')
 # # a = [1,2,3,4,5,6,7,8,9,10]
 # # enumerateA = enumerate(a, 3)
@@ -191,6 +199,35 @@ for j in minimum_values(arr):
 # # for new, i in enumerate(a):
 # for i in enumerate(lst):
 #     print(i)
+
+
+'''
+##PROBLEM 6 ROUNDING
+When program deals with numbers which have fraction part we sometimes want to round such values to whole integer. We'll need this for programming some later problems (to make answers simpler, for example), so let us have the following dedicated exercise to learn this trick.
+There are several pairs of numbers. For each pair you are to divide first by second and return the result, rounded to the nearest integer.
+'''
+arr = [
+    (12, 8),
+    (11, -3),
+    (400, 5)
+]
+def div_sum(arr):
+    fin = []
+    ans = []
+    for i in range(0, len(arr)):
+        # ans = arr[i][0] / arr[i][1]
+        ans = round(arr[i][0] / arr[i][1])
+        fin.append(ans)
+    return tuple(fin)
+
+for a in div_sum(arr):
+    print(a, '\n')
+    print(a)
+
+# print(div_sum(arr))
+
+
+
 '''
 from carpal
 '''
